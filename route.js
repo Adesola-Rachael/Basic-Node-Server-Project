@@ -6,7 +6,7 @@ function requestHandler(req, res){
     if(url === '/'){
         res.setHeader('Content-Type', 'text/html')
         res.write('<html><head><title>Send Message</title></head>')
-        res.write('<body><form action ="/message" method ="POST"><input type ="text" name ="data"><button type ="submit" ></button></form></body>')
+        res.write('<body><form action ="/message" method ="POST"><input type ="text" name ="data"><button type ="submit" >Send</button></form></body>')
         res.write('</html>')
         return res.end()
     }
